@@ -6,4 +6,6 @@
   <p>"This soup is not in season, so it kinda sucks right now"</p>
 <% end %>
 
+<% if params[:admin] == "true" %>
 <p> <%= link_to "Toogle Featured", toggle_featured_path %></p>
+<% end %>
